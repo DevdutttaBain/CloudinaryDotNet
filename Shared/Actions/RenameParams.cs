@@ -28,19 +28,19 @@ namespace CloudinaryDotNet.Actions
         /// </value>
         public string ToPublicId { get; set; }
 
-		/// <summary>
-		/// The media type of resource to rename
-		/// </summary>
-		public ResourceType ResourceType { get; set; }
+	/// <summary>
+	/// The resource type of resource to rename
+	/// </summary>
+	public ResourceType ResourceType { get; set; }
 
         /// <summary>
-		/// The type of resource to rename
-		/// </summary>
+	/// The type of resource to rename
+	/// </summary>
         public string Type { get; set; }
 
         /// <summary>
-		/// The new type of resource to rename
-		/// </summary>
+	/// The new type of resource to rename
+	/// </summary>
         public string NewType { get; set; }
 
         /// <summary>
