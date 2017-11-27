@@ -1286,5 +1286,12 @@ namespace Cloudinary.NetCoreTest
             var uri = m_api.UrlImgFetch.Transform(transformation).BuildUrl("http://image.com/files/8813/5551/7470/cruise-ship.png");
             Assert.AreEqual(m_defaultImgFetchPath + "l_fetch:aHR0cDovL2ltYWdlLmNvbS9pbWcvc2VhdHJhZGVfc3VwcGxpZXJfbG9nby5qcGc=/http://image.com/files/8813/5551/7470/cruise-ship.png", uri);
         }
+
+        [Test]
+        public void TestSuffixForPrivateImages()
+        {
+            Url url = new Url("testcloud").ResourceType("image").Action("private").Suffix("suffix");
+            Assert.IsTrue(url.BuildUrl().Contains("/private_images/"));
+        }
     }
 }
