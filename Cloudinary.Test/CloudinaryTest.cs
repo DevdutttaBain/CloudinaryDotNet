@@ -442,14 +442,6 @@ namespace CloudinaryDotNet.Test
         }
 
         [Test]
-        public void TestUploadTransformationEffect()
-        {
-            Transformation effect = new Transformation().Effect("art:incognito");
-
-            Assert.AreEqual(effect.ToString(), "e_art:incognito");
-        }
-
-        [Test]
         public void TestEnglishText()
         {
             TextParams tParams = new TextParams("Sample text.");
